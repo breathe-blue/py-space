@@ -8,5 +8,5 @@ This repository is a growing collection of learning resources, reusable code sni
 - `funadamentals/` – Core Python concepts like data types, conditionals, loops, functions and oops concepts
 - `data-structures/` – Lists, dictionaries, sets, tuples, stacks, queues, and more
 - `analysis/` – NumPy, pandas, and other libraries for data manipulation and analysis
-- `interview-prep/` – Common Python interview questions, coding patterns, and problem-solving techniques
+- `interview-prep/` – Common interview questions, coding patterns, and problem-solving techniques
 - `experiments/` –  Exploratory scripts to test libraries, tools, workflows, or random ideas
