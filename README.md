@@ -1,15 +1,12 @@
 # 🐍 py-space
 
-Welcome to py-space – my personal python sandbox!
-This repository is a growing collection of learning resources, practical exercises, reusable code snippets, and reference material. It is designed to be my central hub for all things Python – covering everything from the basics to more advanced topics.
-Py-space is where I explore, experiment, and evolve in my Python journey. Feel free to learn alongside and contribute if something sparks your interest.
+Welcome to py-space – my personal python sandbox! <br>
+This repository is a growing collection of learning resources, reusable code snippets, and reference material. It is designed to be my central hub for all things python – covering everything as I explore, experiment, and evolve. Feel free to learn alongside and contribute if something sparks your interest.
 
-## 📂 What's Inside
+## Content
 
-- `basics/` – Core Python concepts (variables, data types, loops, functions, etc.)
-- `data-structures/` – Lists, dictionaries, sets, tuples, stacks, queues, etc.
-- `algorithms/` – Sorting, searching, recursion, etc.
-- `projects/` – Mini-projects and learning-based applications
-- `interview-prep/` – Common Python interview questions and patterns
-- `notes/` – Markdown notes and cheat sheets
-- `experiments/` – Scripts for testing libraries, tools, and ideas
+- `funadamentals/` – Core Python concepts like data types, conditionals, loops, functions and oops concepts
+- `data-structures/` – Lists, dictionaries, sets, tuples, stacks, queues, and more
+- `analysis/` – NumPy, pandas, and other libraries for data manipulation and analysis
+- `interview-prep/` – Common Python interview questions, coding patterns, and problem-solving techniques
+- `experiments/` –  Exploratory scripts to test libraries, tools, workflows, or random ideas
