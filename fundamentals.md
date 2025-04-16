@@ -35,7 +35,7 @@ comment
 
 ```python
 # assigning variables 
-word = "Evangelion"
+word = "evangelion"
 number = 30
 coefficient = 32.09
 fruits = ["apple", "watermelon", "mango"]
@@ -166,6 +166,60 @@ print("pincode datatype:",type(pincode))
 print("pin_code datatype:",type(pin_code))
 ```
 
+## **Copying**
+
+- Using the `=` operator does not create a new object.
+- It simply creates a new variable name that references the same object in memory.
+- Changes made using one variable will affect the other.
+- Both variables point to the same memory address.
+
+```python
+list1 = [1, 2, 3]
+list2 = list1  # reference
+
+list2[0] = 99
+
+print("list1:", list1)  # [99, 2, 3]
+print("list2:", list2)  # [99, 2, 3]
+```
+### Shallow Copying
+- Creates a new outer object, but nested objects are not copied.
+- Instead, the nested objects are still referenced from the original.
+- Changes to nested elements will affect both the copy and the original.
+- Uses the `copy.copy()` function
+- Outer object is a new instance while inner objects are still shared.
+
+```python
+import copy
+
+list1 = [[1, 2], [3, 4]]
+shallow_copy = copy.copy(list1)
+
+shallow_copy[0][0] = 99
+
+print("Original List:", list1)       # [[99, 2], [3, 4]]
+print("Shallow Copy:", shallow_copy) # [[99, 2], [3, 4]]
+```
+
+### Deep Copy
+- Creates a completely independent copy, including all nested objects.
+- Changes made to the deep copy do not affect the original object.
+- Uses the `copy.deepcopy()` function.
+- Both outer and inner objects are completely separate.
+- Safe to modify one without affecting the other
+
+```python
+import copy
+
+list1 = [[1, 2], [3, 4]]
+deep_copy = copy.deepcopy(list1)
+
+deep_copy[0][0] = 99
+
+print("Original List:", list1)   # [[1, 2], [3, 4]]
+print("Deep Copy:", deep_copy)   # [[99, 2], [3, 4]]
+```
+
 ## **Operators**
 - Special symbols that perform operations on variables and values. 
 
@@ -174,7 +228,7 @@ Arithmetic : Perform mathematical operations like addition, subtraction, multipl
 x = 10
 y = 5
 
-print(x + y)  # Addition
+print(x + y)  # 
 print(x - y)  # Subtraction
 print(x * y)  # Multiplication
 print(x / y)  # Division
